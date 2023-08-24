@@ -1,38 +1,349 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .home,
+  .my-goals,
+  .fun-facts,
+  .hire-me {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .my-goals {
+    background-image: url('images/goals.jpeg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000;
+    background-position-y: 20%;
   }
-}
+
+  .my-goals h1 {
+    font-size: 100px;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    }
+
+  .my-goals .intern {
+    font-size: 20px;
+    position: absolute;
+    top: 550px; 
+    left: 80px;
+    right: 1110px;
+    color: black;
+    text-align: center;
+  }
+
+  .my-goals .club {
+    font-size: 20px;
+    position: absolute;
+    top: 220px; 
+    left: 240px;
+    right: 1000px;
+    color: black;
+    text-align: center;
+  }
+
+  .my-goals .grade {
+    font-size: 20px;
+    position: absolute;
+    top: 160px; 
+    left: 630px;
+    right: 580px;
+    color: black;
+    text-align: center;
+  }
+
+  .my-goals .job {
+    font-size: 20px;
+    position: absolute;
+    top: 230px; 
+    right: 220px;
+    left: 1000px;
+    color: black;
+    text-align: center;
+  }
+
+  .my-goals .projects {
+    font-size: 20px;
+    position: absolute;
+    top: 600px; 
+    right: 80px;
+    left: 1150px;
+    color: black;
+    text-align: center;
+  }
+  
+  
+  .fun-facts {
+    background-image: url('images/funFacts.jpeg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fun-facts h1 {
+    margin-top: 80px;
+  }
+
+  .fun-facts p {
+    background-position-y: 200px;
+    font-size: 25px;
+    margin-bottom: 23px;
+    color: white;
+    margin-left: 30px;
+    text-align: center;
+  }
+  
+  .hire-me {
+    background-color: lightskyblue;
+    font-size: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  } 
+
+  .hire-me h1 {
+    font-size: 80px;
+    font-family: "Caveat", sans-serif;
+    position: absolute;
+    top: 80px;
+  }
+
+  .hire-me p {
+    font-size: 36px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 70px;
+    font-family: "Caveat", sans-serif;
+  }
+
+  .hire-me .quality{
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: none;
+    font-weight: bold;
+  }
+
+  .hire-me .description {
+    font-size: 20px;
+    margin-top: 7px;
+    font-family: none;
+  }
+
+  .hire-me .thanks {
+    font-size: 25px;
+    margin-top: 30px;
+    font-family: "Caveat", sans-serif;
+  }
+
+  .education {
+    background-image: url('images/old-well.jpg'), url('images/CFA-logo.jpeg'), url('images/LinedPaper.jpeg');
+    background-position: right, right, center;
+    background-size: 250px, 150px, cover;
+    background-repeat: no-repeat;
+    background-position-x: 1075px, 900px, 0px;
+    background-position-y: 300px, 150px, 0px;
+    height: 90vh; 
+  }
+
+  .education h1 {
+    border-right: 20px;
+    font-size: 68px;
+    color: black;
+    margin-bottom: 77px;
+  }
+
+  .education p {
+    font-size: 30px;
+    margin-left: 115px;
+    color: black;
+    margin-bottom: 12.1px;
+  }
+
+  .education .p2 {
+    font-size: 30px;
+    margin-left: 140px;
+    color: black;
+    margin-bottom: 12.1px;
+  }
+
+  .tech {
+    background-image: url('images/galaxy.webp'); 
+    background-color: lightskyblue;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 80px;
+    height: 90vh; /* Set the height to 100% of the viewport height */
+  }
+
+  .tech h1 {
+    font-size: 80px;
+    margin-bottom: 50px;
+  }
+  
+  .tech p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 40px;
+    margin-left: 120px;
+    width: fit-content;
+    margin-bottom: 20px;
+  }
+
+  .tech .p2 {
+    font-size: 30px;
+    margin-left: 140px;
+    background-color: none;
+    margin-top: 20px;
+  }
+
+  .tech .p3 {
+    font-size: 20px;
+    margin-left: 160px;
+    margin-bottom: 5px;
+  }
+
+  .tech .pa {
+    font-size: 40px;
+    width: fit-content;
+    margin-bottom: 20px;
+    margin-top: -325px;
+    margin-left: 800px;
+  }
+
+  .tech .pb {
+    font-size: 30px;
+    margin-left: 50px;
+    background-color: none;
+    margin-left: 820px;
+    margin-bottom: 20px;
+  }
+
+  .leadership {
+    background-image: url('images/leadership.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000;
+    height: 90vh; /* Set the height to 100% of the viewport height */
+  }
+
+  .leadership p {
+    color: #000;
+    margin-left: 40px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+  }
+
+  .leadership.inverse p {
+    color: #000;
+  }
+
+  .leadership .p2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .leadership h1 {
+    font-size: 100px;
+    margin-bottom: 30px;
+  }
+  .hobbies {
+    background-image: url('images/SurferBackground.jpg'), url('images/rubiksCube.jpeg'), url('images/running.jpeg'), url('images/guitar.jpeg');
+    background-position: top left, top right, bottom left, bottom right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    color: black;
+    font-size: 100px;
+    height: 90vh; /* Set the height to 100% of the viewport height */
+  }
+
+  .hobbies h1 {
+    font-size: 90px;
+  }
+
+  .hobbies .rubiks {
+    font-size: 35px;
+    position: absolute;
+    top: 380px; 
+    right: 250px;
+    color: white;
+  }
+  
+  .hobbies .guitar {
+    font-size: 35px;
+    position: absolute;
+    bottom: 50px; 
+    right: 470px;
+    color: white;
+  }
+  
+  .hobbies .running {
+    font-size: 35px;
+    position: absolute;
+    bottom: 300px;
+    left: 100px;
+    color: white;
+  }
+  
+  .hobbies .surfing {
+    font-size: 35px;
+    position: absolute; 
+    top: 300px; 
+    left: 420px;
+    color: white;
+  }
+  
+
+  .work {
+    background-image: url('images/workBackground.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000;
+    font-size: 90px;
+    height: 90vh; /* Set the height to 100% of the viewport height */
+  }
+
+  .work h1 {
+    font-size: 70px;
+    margin-bottom: 40px;
+
+  }
+
+  .work p {
+    margin-left: 20px;
+    font-size: 34px;
+    margin-bottom: 25x;
+  }
+
+  .work .p2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+    margin-top: 5px;
+    margin-right: 375px;
+  }
+  
+
+
+
+  
